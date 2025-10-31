@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-# ddpm-image-denoising
-Implementation of Denoising Diffusion Probabilistic Models 
-=======
-# DDPM Denoiser API (FastAPI · OAuth2 · Metrics · Docker)
-This starter serves an image denoiser (e.g., **DDPM**) via FastAPI
+# DDPM Denoiser API
+This starter serves an image denoiser **DDPM** via FastAPI
 
 ## Quickstart
 ```bash
@@ -58,26 +54,6 @@ pip install locust
 locust -f locustfile.py --host http://127.0.0.1:8000
 ```
 
-# DDPM Denoiser API
-
-A simple FastAPI wrapper for a DDPM denoising model. Upload an image and get a denoised result.
-
-## Quickstart
-
-1. **Install dependencies** (in your venv):
-   ```sh
-   pip install -r requirements.txt
-   ```
-
-2. **Run the API:**
-   ```sh
-   uvicorn app.main:app --reload
-   ```
-
-3. **Try it out:**
-   - Visit http://127.0.0.1:8000/docs for the interactive API docs.
-   - Use `/denoise` endpoint to upload an image and get a denoised result.
-
 ## Endpoints
 - `/health`, `/livez`, `/readyz`: Health checks
 - `/auth/token`: Get an auth token
@@ -86,11 +62,5 @@ A simple FastAPI wrapper for a DDPM denoising model. Upload an image and get a d
 ## Model Checkpoint
 Place your model checkpoint in `model_MNIST_checkpoint/` or set `MODEL_PATH` env variable.
 
-## Testing
-```sh
-pytest
-```
-
 ---
 MIT License
->>>>>>> master
